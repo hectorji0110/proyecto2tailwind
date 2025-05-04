@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PayPal Clone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Navbar -->
+  <header class="flex justify-between items-center px-10 py-4 shadow-md">
+    <button class="lg:hidden px-8 py-3 font-semibold text-lg rounded-3xl border-blue-600 border-2 hover:underline" >Menu</button>
+    <img src="./images/logo.png" alt="PayPal Logo" class="w-20" />
+    <nav class="space-x-4 hidden md:flex">
+      <a href="#" class="hidden lg:flex hover:text-blue-700 text-2xl font-semibold">Comprar</a>
+      <a href="#" class="hidden lg:flex hover:text-blue-700 text-2xl font-semibold pr-4 pl-4">Vender</a>
+      <a href="#" class="hidden lg:flex hover:text-blue-700 text-2xl font-semibold"> Solicitar pagos</a>
+    </nav>
+    <div class="space-x-2 flex">
+      <button class="px-8 py-3 font-semibold text-lg rounded-3xl border-blue-600 border-2 hover:underline">Iniciar sesión</button>
+      <button class="hidden lg:flex bg-blue-600 font-semibold text-lg text-white px-8 py-3 rounded-3xl hover:bg-blue-700">Abrir cuenta</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section
+  class="min-h-[85vh] overflow-hidden bg-center relative bg-[url('./images/fondo.jpg')] bg-cover">
+  <!-- Overlay diagonal -->
+  <div class="absolute inset-0">
+    <!-- Fondo azul claro con skew -->
+    <div class="absolute inset-y-0 left-[-10%] w-[60%] bg-blue-400/60 transform -skew-x-12 origin-left z-10">
+      <div class="flex flex-col w-[100%] pl-[28%] h-full items-end justify-center text-white text-left p-8">
+        <h1 class="text-3xl md:text-5xl font-bold mb-4 ">
+          Compra y envía pagos en línea
+        </h1>
+        <p class="text-2xl md:text-3xl mb-8 text-left max-w-2xl">
+          Compra en miles de sitios web en el extranjero sin tener que
+          compartir tu información financiera. Más información
+        </p>
+      <div class="flex w-[100%] pl-[23%] items-start justify-start text-white p-8">
+        <button class="hidden lg:flex bg-white font-semibold text-gray-800 hover:bg-gray-200 px-8 md:px-20 py-2 rounded-3xl text-xl md:text-2xl">Registrase sin costo</button>
+      </div>
+      </div>
+    </div>
+
+    <!-- Fondo azul oscuro con skew -->
+    <div
+      class="absolute inset-y-0 right-[-10%] w-[60%] bg-blue-900/60 transform -skew-x-12 origin-right z-10">
+      <div class="flex flex-col w-[100%] pr-[28%] h-full items-start justify-center text-white text-left p-8">
+        <h1 class="text-3xl md:text-5xl font-bold mb-4">
+          Vende y recibe pagos en línea
+        </h1>
+        <p class="text-2xl md:text-3xl mb-8 text-right max-w-2xl">
+          Vende alrededor del mundo y recibe pagos en tu sitio web, app, o correo electrónico. Más información
+        </p>
+        <div class="flex w-[100%] pr-[20%] items-end justify-end text-white p-8">
+          <button class="hidden lg:flex bg-white font-semibold text-gray-800 hover:bg-gray-200 px-18 md:px-20 py-2 rounded-3xl text-xl md:text-2xl">Registrase sin costo</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Contenido top -->
+    <div
+      class="relative z-20 hidden xl:flex flex-col items-center justify-center h-min-[85vh] h-[35%] text-white text-center">
+  
+      <p class="text-5xl max-w-2xl mb-8">
+        La forma fácil y segura de enviar y recibir pagos en línea
+      </p>
+    </div>
+  </div>
+
+</section>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 md:px-10 grid grid-cols-1 md:grid-cols-3 items-center gap-8">
+      <!-- Lado izquierdo: Icono o imagen -->
+      <div class="flex justify-center md:justify-end">
+        <!-- Aquí podrías poner el ícono del corazón con el logo de PayPal -->
+        <img src="../images/foto3.jpg" alt="Corazón con logo de PayPal" class="hidden md:block w-full max-w-md object-contain">
+      </div>
+    
+      <!-- Lado derecho: Texto -->
+      <div class="space-y-8 md:col-span-2 text-center md:text-left">
+        <h2 class="text-3xl md:text-4xl lg:text-6xl text-gray-600 font-semibold">Únete a los más de 200 millones de usuarios que utilizan PayPal</h2>
+        <p class="text-gray-600 text-xl md:text-2xl leading-relaxed">
+          Nuestra plataforma de pagos en línea ofrece a nuestros usuarios la total confianza para realizar transacciones de una forma innovadora y eficaz, ya sea desde casa, desde el celular o a través de una app.
+        </p>
+        <p class="text-blue-600 font-medium underline cursor-pointer text-lg md:text-xl">
+          Descubrir beneficios y funcionalidades para: compradores y negocios
+        </p>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 md:px-10 py-40 grid grid-cols-1 md:grid-cols-3 items-center gap-8">
+      <!-- Lado izquierdo: Texto -->
+      <div class="space-y-8 md:col-span-2 text-center md:text-left">
+        <h2 class="text-3xl md:text-4xl lg:text-6xl text-gray-600 font-semibold">Sinónimo de seguridad y facilidad</h2>
+        <p class="text-gray-600 text-xl md:text-xl leading-relaxed ">
+          Mantener la confianza de nuestros clientes y partners es nuestra prioridad número uno. Nuestro compromiso de garantizar pagos seguros en línea es la razón por la cual nuestros clientes eligen PayPal para hacer sus pagos.
+        </p>
+        <p class="text-blue-600 font-medium underline cursor-pointer text-xl md:text-2xl">
+          Más información sobre seguridad
+        </p>
+      </div>
+    
+      <!-- Lado derecho: Imagen o ícono -->
+      <div class="flex justify-center md:justify-start">
+        <!-- Puedes usar una imagen SVG, PNG o incluso un ícono aquí -->
+        <img src="../images/foto2.jpg" alt="Persona con tableta protegida por un escudo" class="hidden md:block w-full max-w-md object-contain">
+      </div>
+    </div>
+      <div class=" max-w-7xl mx-auto mt-20 gap-12 text-center px-4">
+        <img src="../images/foto1.jpg" alt="Gestionar pagos" class="mx-auto mb-6 w-full max-w-3xl" />
+        <h3 class="text-3xl md:text-5xl mb-4">Con la confianza de las mejores marcas</h3>
+        <p class="text-gray-600 text-xl md:text-2xl">PayPal se acepta en sitios web, tanto grandes como pequeños. Ayudamos a conectar a nuestros clientes con marcas de todo el mundo.*</p>
+      </div>
+      <div class="flex flex-wrap justify-center mt-20 gap-12 ">
+        <img src="./images/face.jpg" alt="face" class="w-60 h-40">
+        <img src="./images/fornite.jpg" alt="fornite" class="w-60 h-40">
+        <img src="./images/microsof.jpg" alt="micro" class="w-60 h-40">
+        <img src="./images/spoty.jpg" alt="spoty" class="w-60 h-40">
+        <img src="./images/uber.jpg" alt="uber" class="w-60 h-40">
+      </div>
+      <div class=" max-w-7xl mx-auto mt-20 gap-12 text-center px-4">
+        <button class="bg-white font-semibold text-blue-600 hover:bg-gray-200 px-20 md:px-40 py-3 rounded-3xl border-blue-600 border-2 md:text-2xl">Ver mas marcas</button>
+        <p class="text-gray-600 text-xl md:text-2xl mt-8">*Los comercios pueden no estar disponibles en todos los países.</p>
+      </div>
+
+      <div class=" max-w-7xl mx-auto mt-20 gap-12 text-center px-4">
+        <h1 class="text-4xl md:text-5xl mb-4 text-gray-600">¿Tienes dudas sobre tu cuenta o tus compras?</h1>
+        <h3 class="text-2xl md:text-3xl mb-4 text-gray-600 mt-8">Visita nuestro centro de Ayuda o pregunta en nuestro Foro de la comunidad.</h3>
+        <button class="bg-blue-500 font-semibold text-gray-100 px-12 md:px-20 py-3 rounded-3xl md:text-2xl mt-8">Resgistrate sin costo</button>
+        <p class="text-blue-500 font-medium hover:underline cursor-pointer text-xl md:text-2xl mt-8">Vea nuestras preguntas frecuentes</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 text-gray-600 text-sm py-8 px-6 md:px-40">
+    <div class="flex flex-wrap justify-between">
+      <div class="mb-4 space-x-4">
+        <a href="#" class="hover:underline">Ayuda</a>
+        <a href="#" class="hover:underline">Contactanos</a>
+        <a href="#" class="hover:underline">Comisiones</a>
+        <a href="#" class="hover:underline">Seguridad</a>
+        <a href="#" class="hover:underline">Comprar</a>
+
+      </div>
+      <div class="space-x-4">
+        <a href="#" class="hover:underline">English</a>
+        <img src="./images/us.svg" alt="usa" class="w-6 h-6">
+      </div>
+    </div>
+    <hr class="border-gray-300 border-2">
+    <div class="flex flex-wrap justify-between">
+      <div class="mb-4 space-x-4">
+        <a href="#" class="hover:underline">Acerca de Paypal</a>
+        <a href="#" class="hover:underline">Newsroom</a>
+        <a href="#" class="hover:underline">Empleos</a>
+        <a href="#" class="hover:underline">Desarrolladores</a>
+        <a href="#" class="hover:underline">Partbers</a>
+
+      </div>
+      <div class="space-x-4">
+        <a href="#">&copy; 1995-2025</a>
+        <a href="#" class="hover:underline">Accebilidad</a>
+        <a href="#" class="hover:underline">Privacidad</a>
+        <a href="#" class="hover:underline">Cokies</a>
+        <a href="#" class="hover:underline">Acuerdos legales</a>
+      </div> 
+    </div>
+    <div class="mx-auto text-left">
+      <p class="font-medium">PayPal Pte. Ltd. tiene licencia otorgada por la Autoridad Monetaria de Singapur como Institución de Pago Principal en virtud de la Ley de Servicios de Pago de 2019.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
